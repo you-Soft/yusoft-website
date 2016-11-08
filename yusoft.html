@@ -1,0 +1,234 @@
+<html>
+
+</body><body background="Best-laptop-full-hd-wallpaper-for-laptop-min.jpg">
+
+<HEAD>
+<TITLE>Yusoft Software Development Website</TITLE>
+<link rel="stylesheet" type="text/css" href="index.css">
+</HEAD>
+<BODY BGCOLOR="#4d0000">
+<div class="container">
+  <nav>
+  </nav>  <form name="where">
+ <table border="0" width="200" cellspacing="0" cellpadding="3">
+<tr>
+<td width="100%">
+<select name="city" size="1" onchange="updateclock(this);"> 
+<option selected>local time</option>
+<option value="0">London</option> 
+<option value="3">yemen</option>
+<option value="4">Emirates</option>
+<option value="3">Kuwait</option>
+<option value="3">Lebanon</option>
+<option value="4">oman</option>
+<option value="3">catar</option>
+<option value="3">Egypt</option>
+<option value="0">Morocco</option>
+<option value="1">Tunisia</option>
+<option value="1">Rome</option>
+<option value="7">Bangkok</option>
+<option value="8">Hong Kong</option>
+<option value="9">Tokyo</option> 
+<option value="10">Sydney</option>
+<option value="12">Fuji</option>
+<option value="-10">Hawaii</option>
+<option value="-8">San Francisco</option> 
+<option value="-5">New York</option>
+</select>
+</td>
+  </tr>
+<tr>
+    <td width="100%">
+<script language="JavaScript">
+if (document.all||document.getElementById)
+document.write('<span id="worldclock" style="font:bold 16px Arial;"></span><br>')
+zone=0;
+isitlocal=true;
+ampm='';
+function updateclock(z){
+zone=z.options[z.selectedIndex].value;
+isitlocal=(z.options[0].selected)?true:false;
+}
+function WorldClock(){
+now=new Date();
+ofst=now.getTimezoneOffset()/60;
+secs=now.getSeconds();
+sec=-1.57+Math.PI*secs/30;
+mins=now.getMinutes();
+min=-1.57+Math.PI*mins/30;
+hr=(isitlocal)?now.getHours():(now.getHours() + parseInt(ofst)) + parseInt(zone);
+hrs=-1.575+Math.PI*hr/6+Math.PI*parseInt(now.getMinutes())/360;
+if (hr < 0) hr+=24;
+if (hr > 23) hr-=24;
+ampm = (hr > 11)?"PM":"AM";
+statusampm = ampm.toLowerCase();
+
+hr2 = hr;
+if (hr2 == 0) hr2=12;
+(hr2 < 13)?hr2:hr2 %= 12;
+if (hr2<10) hr2="0"+hr2
+
+var finaltime=hr2+':'+((mins < 10)?"0"+mins:mins)+':'+((secs < 10)?"0"+secs:secs)+' '+statusampm;
+
+if (document.all)
+worldclock.innerHTML=finaltime
+else if (document.getElementById)
+document.getElementById("worldclock").innerHTML=finaltime
+else if (document.layers){
+document.worldclockns.document.worldclockns2.document.write(finaltime)
+document.worldclockns.document.worldclockns2.document.close()
+}
+setTimeout('WorldClock()',1000);
+}
+window.onload=WorldClock
+</script>
+<!--Place holder for NS4 only-->
+<ilayer id="worldclockns" width=100% height=35><layer id="worldclockns2" width=100% height=35 left=0 top=0 style="font:bold 16px Arial;"></layer></ilayer>
+</td></tr>
+</table>
+</form>
+  <header>
+    <div class="dropdown">
+      <button class="button">Homepage</button>
+      <div class="dropdown-content"> <a href="#">Description</a> <a href="#">Development</a> <a href="#">Price</a> </div>
+    </div>
+    <div class="dropdown">
+      <button class="button">Software</button>
+      <div class="dropdown-content"> <a href="#">Description</a> <a href="#">Development</a> <a href="#">Price</a> </div>
+    </div>
+    <div class="dropdown">
+      <button class="button ">Source code</button>
+      <div class="dropdown-content"> <a href="#">Description</a> <a href="#">Development</a> <a href="#">Price</a> </div>
+    </div>
+    <div class="dropdown">
+      <button class="button">Donwload</button>
+      <div class="dropdown-content"> <a href="#">Description</a> <a href="#">Development</a> <a href="#">Price</a> </div>
+    </div>
+    <div class="dropdown">
+      <button class="button">Contact us</button>
+      <div class="dropdown-content"> <a href="#">Description</a> <a href="#">Development</a> <a href="#">Price</a> </div>
+    </div>
+  </header>
+  <article>
+  <body>
+
+<marquee direction="right">Yusoft Software Development Website</marquee>
+<body>
+    <h1>Hello world</h1>
+    <p style="word-wrap: break-word;width: 980px;"><img src="images/giphy.gif" width="320" height="180" alt=""/> 
+     </p>
+  </article>
+  <footer>Copyright© Yusoft</footer>
+</div>
+
+<canvas id="demo-canvas"></canvas>
+</BODY>
+<script type="text/javascript" src="./TweenLite.min.js"></script>
+<script type="text/javascript" src="./EasePack.min.js"></script>
+<script type="text/javascript" src="./demo-1.js"></script>
+</HTML>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+window.alert(" Yusoft Software Development Website ")
+
+</SCRIPT>
+  <script LANGUAGE="JavaScript">
+<!-- Begin
+
+///* Tell-a-friend script                                   */
+///* Carl Dimmer                                            */
+///* Translated By www.star28.com                           */
+///* Visit our site at http://www.star28.com/ for more code */
+
+var initialsubj="السلام عليكم"
+var initialmsg="مرحبا:\n .... أثناء تجولي في الانترنت وجدت هذا الموقع و أتمنى أن ينال اعجابك ....... تحياتي لك: "+window.location
+var good;
+function checkEmailAddress(field) {
+
+var goodEmail = field.value.match(/\b(^(\S+@).+((\.com)|(\.net)|(\.edu)|(\.mil)|(\.gov)|(\.org)|(\.info)|(\.sex)|(\.biz)|(\.aero)|(\.coop)|(\.museum)|(\.name)|(\.pro)|(\..{2,2}))$)\b/gi);
+if (goodEmail) {
+good = true;
+}
+else {
+alert('يرجى أدخال بريد الكتروني صحيح');
+field.focus();
+field.select();
+good = false;
+   }
+}
+u = window.location;
+function mailThisUrl() {
+good = false
+checkEmailAddress(document.eMailer.email);
+if (good) {
+//window.location = "mailto:"+document.eMailer.email.value+"?subject="+initialsubj+"&body="+document.title+" "+u;
+window.location = "mailto:"+document.eMailer.email.value+"?subject="+initialsubj+"&body="+initialmsg
+   }
+}
+//  End -->
+</script>
+     
+<script LANGUAGE="JavaScript">
+
+<!-- This script and many more are available online from -->
+<!-- The JavaScript Source!! http://javascriptsource.com -->
+
+<!-- Begin
+var day="";
+var month="";
+var myweekday="";
+var year="";
+mydate = new Date();
+myday = mydate.getDay();
+mymonth = mydate.getMonth();
+myweekday= mydate.getDate();
+weekday= myweekday;
+myyear= mydate.getYear();
+year = myyear
+if(myday == 0)
+day = " الأحد, "
+else if(myday == 1)
+day = " الأثنين, "
+else if(myday == 2)
+day = " الثلاثاء, "
+else if(myday == 3)
+day = " الاربعاء, "
+else if(myday == 4)
+day = " الخميس, "
+else if(myday == 5)
+day = " الجمعة, "
+else if(myday == 6)
+day = " السبت, "
+if(mymonth == 0) {
+month = "يناير "}
+else if(mymonth ==1)
+month = "فبراير "
+else if(mymonth ==2)
+month = "مارس "
+else if(mymonth ==3)
+month = "ابريل "
+else if(mymonth ==4)
+month = "مايو "
+else if(mymonth ==5)
+month = "يونيو "
+else if(mymonth ==6)
+month = "يوليو "
+else if(mymonth ==7)
+month = "اغسطس "
+else if(mymonth ==Cool
+month = "سبتمبر "
+else if(mymonth ==9)
+month = "اكتوبر "
+else if(mymonth ==10)
+month = "نوفمبر "
+else if(mymonth ==11)
+month = "ديسمبر "
+
+
+document.write("<b><font face=Arial size=3> " + day + " " + myweekday + " - " );
+document.write(month + " - "+ year + "</font></b>");
+
+// End -->
+</script>
+
